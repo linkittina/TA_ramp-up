@@ -8,8 +8,28 @@ const careerPage = new CareerPage();
 defineSupportCode(({Given, When, Then, setDefaultTimeout}) => {
     setDefaultTimeout(GLOBAL_TIMEOUT);
 
-    Given(/^the EPAM career site is opened$/, () => {
+    Given(/^the EPAM career page is opened$/, () => {
         return careerPage.load();
+    });
+
+    When(/^the Find button is clicked$/, () => {
+        return careerPage.find();
+    });
+
+    When(/^the keyword (.+) is entered$/, keyword => {
+        return careerPage.roleName(keyword);
+    });
+
+    When(/^the skill drop-down is opened$/, () => {
+        return careerPage.getSkillDropDown();
+    });
+
+    When(/^the skill (.+) is selected$/, skill => {
+        return careerPage.skillName(skill);
+    });
+
+    When(/^the apply button is clicked$/, () => {
+        return careerPage.getApplyButton();
     });
 
     Then(/^the search form should be displayed$/, () => {
@@ -36,22 +56,6 @@ defineSupportCode(({Given, When, Then, setDefaultTimeout}) => {
         return careerPage.isFindButtonVisible();
     });
 
-    When(/^the Find button is clicked$/, () => {
-        return careerPage.find();
-    });
-
-    When(/^the keyword (.+) is entered$/, keyword => {
-        return careerPage.roleName(keyword);
-    });
-
-    When(/^the skill drop-down is opened$/, () => {
-        return careerPage.openSkillDropDown();
-    });
-
-    When(/^the skill (.+) is selected$/, skill => {
-        return careerPage.skillName(skill);
-    });
-
     Then(/^the SRL should be displayed$/, () => {
         return careerPage.isSrlVisible();
     });
@@ -70,6 +74,10 @@ defineSupportCode(({Given, When, Then, setDefaultTimeout}) => {
 
     Then(/^there should be 0 results on the SRL$/, () => {
         return careerPage.isZeroResults();
+    });
+
+    Then(/^the apply button should be displayed$/, () => {
+        return careerPage.isApplyButtonVisible();
     });
 
 });
