@@ -3,6 +3,7 @@
 class jobPage {
     constructor() {
         this.titleOfJobPage = element(by.css('.vacancy-page__header > h1'));
+        this.locationOfJobPage = element(by.css('.vacancy-page__location'));
         this.applyForm = element(by.css('.right-container'));
         this.hotLabel = element(by.css('.vacancy-page__option-hot'));
         this.relocationLabel = element(by.css('.vacancy-page__option-relocation'));
@@ -10,13 +11,17 @@ class jobPage {
 
     }
 
-    load() {
-        browser.get('https://www.epam.com/careers/job-listings/job.42288');
+    loadJobUrl(url) {
+        browser.get(url);
         return browser.wait(this.applyForm.isDisplayed(), GLOBAL_TIMEOUT);
     }
 
     getTitleOfJobPage(title) {
         return expect(this.titleOfJobPage.getText()).to.eventually.equal(title);
+    }
+
+    getLocationOfJobPage(location) {
+        return expect(this.locationOfJobPage.getText()).to.eventually.equal(location);
     }
 
     isHotLabelVisible() {

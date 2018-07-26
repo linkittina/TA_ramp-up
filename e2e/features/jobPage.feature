@@ -16,8 +16,9 @@ Feature: Job page UI
     Then the search form should be displayed
 
   Scenario: 2. Open a job page from URL and check UI
-    Given the EPAM Web Portal Business Analyst job page is opened
+    Given the following job url is opened: https://www.epam.com/careers/job-listings/job.42288
     Then the title of the page should be: Web Portal Business Analyst
+    And the location of the job should be: Dubai, UAE
     And the hot label should be displayed
     And the relocation label should be displayed
     And the apply form should be displayed

@@ -1,612 +1,5 @@
 [
   {
-    "description": "  As a user\n  I want to find job opportunities on the EPAM career site\n  So that I can the open positions",
-    "keyword": "Feature",
-    "line": 1,
-    "name": "Search functionality",
-    "tags": [],
-    "uri": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\features\\careerPage.feature",
-    "elements": [
-      {
-        "keyword": "Scenario",
-        "line": 6,
-        "name": "1. Quick UI check for search form",
-        "tags": [],
-        "id": "search-functionality;1.-quick-ui-check-for-search-form",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "the EPAM career page is opened",
-            "result": {
-              "status": "passed",
-              "duration": 3335
-            },
-            "line": 7,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:11"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "the search form should be displayed",
-            "result": {
-              "status": "passed",
-              "duration": 46
-            },
-            "line": 8,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:35"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "the placeholder should be displayed",
-            "result": {
-              "status": "passed",
-              "duration": 30
-            },
-            "line": 9,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:39"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "the keyword input should be displayed",
-            "result": {
-              "status": "passed",
-              "duration": 35
-            },
-            "line": 10,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:43"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "the location drop-down should be displayed",
-            "result": {
-              "status": "passed",
-              "duration": 39
-            },
-            "line": 11,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:47"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "the skill drop-down should be displayed",
-            "result": {
-              "status": "passed",
-              "duration": 44
-            },
-            "line": 12,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:51"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "the find button should be displayed",
-            "result": {
-              "status": "passed",
-              "duration": 29
-            },
-            "line": 13,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:55"
-            }
-          }
-        ]
-      },
-      {
-        "keyword": "Scenario",
-        "line": 28,
-        "name": "2.A - job title search",
-        "tags": [],
-        "id": "search-functionality;2.a---job-title-search",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "the EPAM career page is opened",
-            "result": {
-              "status": "passed",
-              "duration": 885
-            },
-            "line": 16,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:11"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "the keyword Java Developer is entered",
-            "result": {
-              "status": "passed",
-              "duration": 5161
-            },
-            "line": 17,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:19"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "the skill drop-down is opened",
-            "result": {
-              "status": "passed",
-              "duration": 0
-            },
-            "line": 18,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:23"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "the skill Software Engineering is selected",
-            "result": {
-              "status": "passed",
-              "duration": 0
-            },
-            "line": 19,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:27"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "the Find button is clicked",
-            "result": {
-              "status": "passed",
-              "duration": 0
-            },
-            "line": 20,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:15"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "the SRL should be displayed",
-            "result": {
-              "status": "passed",
-              "duration": 11307
-            },
-            "line": 21,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:59"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "the title of the first position should be Java Developer",
-            "result": {
-              "status": "passed",
-              "duration": 33
-            },
-            "line": 22,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:63"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "the location of the position should be BUDAPEST, HUNGARY",
-            "result": {
-              "status": "passed",
-              "duration": 32
-            },
-            "line": 23,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:67"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "the description of the position should be: Currently we are looking for a Java Developer for our Budapest office to make the team even stronger. In Hungary currently 1400+ IT Engineers help the world’s leading companies imagine, design, engineer and deliver software...",
-            "result": {
-              "status": "passed",
-              "duration": 31
-            },
-            "line": 24,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:71"
-            }
-          }
-        ]
-      },
-      {
-        "keyword": "Scenario",
-        "line": 29,
-        "name": "2.B - job ID search",
-        "tags": [],
-        "id": "search-functionality;2.b---job-id-search",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "the EPAM career page is opened",
-            "result": {
-              "status": "passed",
-              "duration": 811
-            },
-            "line": 16,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:11"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "the keyword 18374 is entered",
-            "result": {
-              "status": "passed",
-              "duration": 5107
-            },
-            "line": 17,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:19"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "the skill drop-down is opened",
-            "result": {
-              "status": "passed",
-              "duration": 1
-            },
-            "line": 18,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:23"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "the skill Software Engineering is selected",
-            "result": {
-              "status": "passed",
-              "duration": 2
-            },
-            "line": 19,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:27"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "the Find button is clicked",
-            "result": {
-              "status": "passed",
-              "duration": 0
-            },
-            "line": 20,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:15"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "the SRL should be displayed",
-            "result": {
-              "status": "passed",
-              "duration": 11384
-            },
-            "line": 21,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:59"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "the title of the first position should be .NET (Web Application) Developer",
-            "result": {
-              "status": "passed",
-              "duration": 39
-            },
-            "line": 22,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:63"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "the location of the position should be BUDAPEST, HUNGARY",
-            "result": {
-              "status": "passed",
-              "duration": 34
-            },
-            "line": 23,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:67"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "the description of the position should be: Currently we are looking for a .NET (Web Application) Developer for our Budapest office to make the team even stronger. In Hungary currently 1400+ IT Engineers help the world’s leading companies imagine, design, engineer and...",
-            "result": {
-              "status": "passed",
-              "duration": 34
-            },
-            "line": 24,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:71"
-            }
-          }
-        ]
-      },
-      {
-        "keyword": "Scenario",
-        "line": 39,
-        "name": "3.A - asterisk search",
-        "tags": [],
-        "id": "search-functionality;3.a---asterisk-search",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "the EPAM career page is opened",
-            "result": {
-              "status": "passed",
-              "duration": 766
-            },
-            "line": 32,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:11"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "the keyword * is entered",
-            "result": {
-              "status": "passed",
-              "duration": 5096
-            },
-            "line": 33,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:19"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "the Find button is clicked",
-            "result": {
-              "status": "passed",
-              "duration": 1
-            },
-            "line": 34,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:15"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "there should be 0 results on the SRL",
-            "result": {
-              "status": "passed",
-              "duration": 6217
-            },
-            "line": 35,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:75"
-            }
-          }
-        ]
-      },
-      {
-        "keyword": "Scenario",
-        "line": 40,
-        "name": "3.B - 0 results search",
-        "tags": [],
-        "id": "search-functionality;3.b---0-results-search",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "the EPAM career page is opened",
-            "result": {
-              "status": "passed",
-              "duration": 872
-            },
-            "line": 32,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:11"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "the keyword (back-end) is entered",
-            "result": {
-              "status": "passed",
-              "duration": 5124
-            },
-            "line": 33,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:19"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "the Find button is clicked",
-            "result": {
-              "status": "passed",
-              "duration": 0
-            },
-            "line": 34,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:15"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "there should be 0 results on the SRL",
-            "result": {
-              "status": "passed",
-              "duration": 6127
-            },
-            "line": 35,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:75"
-            }
-          }
-        ]
-      },
-      {
-        "keyword": "Scenario",
-        "line": 41,
-        "name": "3.C - invalid keyword search",
-        "tags": [],
-        "id": "search-functionality;3.c---invalid-keyword-search",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "the EPAM career page is opened",
-            "result": {
-              "status": "passed",
-              "duration": 874
-            },
-            "line": 32,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:11"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "the keyword lorem ipsum is entered",
-            "result": {
-              "status": "passed",
-              "duration": 5127
-            },
-            "line": 33,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:19"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "the Find button is clicked",
-            "result": {
-              "status": "passed",
-              "duration": 1
-            },
-            "line": 34,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:15"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "there should be 0 results on the SRL",
-            "result": {
-              "status": "passed",
-              "duration": 6050
-            },
-            "line": 35,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:75"
-            }
-          }
-        ]
-      },
-      {
-        "keyword": "Scenario",
-        "line": 42,
-        "name": "3.D - invalid keyword search",
-        "tags": [],
-        "id": "search-functionality;3.d---invalid-keyword-search",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "the EPAM career page is opened",
-            "result": {
-              "status": "passed",
-              "duration": 775
-            },
-            "line": 32,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:11"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "the keyword }$ł@#&˛°˘^÷Łß$ł`˛°^ is entered",
-            "result": {
-              "status": "passed",
-              "duration": 5203
-            },
-            "line": 33,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:19"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "the Find button is clicked",
-            "result": {
-              "status": "passed",
-              "duration": 0
-            },
-            "line": 34,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:15"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "there should be 0 results on the SRL",
-            "result": {
-              "status": "passed",
-              "duration": 6062
-            },
-            "line": 35,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:75"
-            }
-          }
-        ]
-      }
-    ],
-    "id": "search-functionality"
-  },
-  {
     "description": "  As a user\n  I want to open a job opportunity on the EPAM career site\n  So that I can see the details of the selected job",
     "keyword": "Feature",
     "line": 1,
@@ -627,7 +20,7 @@
             "name": "the EPAM career page is opened",
             "result": {
               "status": "passed",
-              "duration": 761
+              "duration": 3281
             },
             "line": 7,
             "match": {
@@ -640,7 +33,7 @@
             "name": "the keyword Java Developer is entered",
             "result": {
               "status": "passed",
-              "duration": 5139
+              "duration": 5168
             },
             "line": 8,
             "match": {
@@ -666,7 +59,7 @@
             "name": "the apply button should be displayed",
             "result": {
               "status": "passed",
-              "duration": 6070
+              "duration": 6101
             },
             "line": 10,
             "match": {
@@ -679,7 +72,7 @@
             "name": "the apply button is clicked",
             "result": {
               "status": "passed",
-              "duration": 1
+              "duration": 0
             },
             "line": 12,
             "match": {
@@ -692,7 +85,7 @@
             "name": "the title of the page should be: Java Developer",
             "result": {
               "status": "passed",
-              "duration": 842
+              "duration": 1627
             },
             "line": 13,
             "match": {
@@ -718,7 +111,7 @@
             "name": "the search form should be displayed",
             "result": {
               "status": "passed",
-              "duration": 843
+              "duration": 943
             },
             "line": 16,
             "match": {
@@ -737,10 +130,10 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "name": "the EPAM Web Portal Business Analyst job page is opened",
+            "name": "the following job url is opened: https://www.epam.com/careers/job-listings/job.42288",
             "result": {
               "status": "passed",
-              "duration": 765
+              "duration": 1426
             },
             "line": 19,
             "match": {
@@ -753,11 +146,24 @@
             "name": "the title of the page should be: Web Portal Business Analyst",
             "result": {
               "status": "passed",
-              "duration": 32
+              "duration": 30
             },
             "line": 20,
             "match": {
               "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\jobPage.js:19"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "the location of the job should be: Dubai, UAE",
+            "result": {
+              "status": "passed",
+              "duration": 33
+            },
+            "line": 21,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\jobPage.js:23"
             }
           },
           {
@@ -768,19 +174,6 @@
               "status": "passed",
               "duration": 29
             },
-            "line": 21,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\jobPage.js:23"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "the relocation label should be displayed",
-            "result": {
-              "status": "passed",
-              "duration": 27
-            },
             "line": 22,
             "match": {
               "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\jobPage.js:27"
@@ -789,14 +182,27 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "name": "the apply form should be displayed",
+            "name": "the relocation label should be displayed",
             "result": {
               "status": "passed",
-              "duration": 20
+              "duration": 30
             },
             "line": 23,
             "match": {
               "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\jobPage.js:31"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "the apply form should be displayed",
+            "result": {
+              "status": "passed",
+              "duration": 19
+            },
+            "line": 24,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\jobPage.js:35"
             }
           }
         ]

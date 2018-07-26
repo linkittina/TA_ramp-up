@@ -8,8 +8,8 @@ const jobPage = new JobPage();
 defineSupportCode(({Given, When, Then, setDefaultTimeout}) => {
     setDefaultTimeout(GLOBAL_TIMEOUT);
 
-    Given(/^the EPAM Web Portal Business Analyst job page is opened$/, () => {
-        return jobPage.load();
+    Given(/^the following job url is opened: (.+)$/, (url) => {
+        return jobPage.loadJobUrl(url);
     });
 
     When(/^the (.+) navigation link is clicked$/, (careers) => {
@@ -18,6 +18,10 @@ defineSupportCode(({Given, When, Then, setDefaultTimeout}) => {
 
     Then(/^the title of the page should be: (.+)$/, (title) => {
         return jobPage.getTitleOfJobPage(title);
+    });
+
+    Then(/^the location of the job should be: (.+)$/, (location) => {
+        return jobPage.getLocationOfJobPage(location);
     });
 
     Then(/^the hot label should be displayed$/, () => {
