@@ -1,309 +1,182 @@
 [
   {
-    "description": "  As a user\n  I want to visit the EPAM career site\n  So that I can apply for a job",
+    "description": "  As a user\n  I want to find job opportunities on the EPAM career site\n  So that I can the open positions",
     "keyword": "Feature",
     "line": 1,
-    "name": "EPAM career site tests",
+    "name": "Search functionality",
     "tags": [],
-    "uri": "C:\\training_project_2\\cucumber-protractor-skeleton\\e2e\\features\\careerPage.feature",
+    "uri": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\features\\careerPage.feature",
     "elements": [
       {
         "keyword": "Scenario",
-        "line": 20,
-        "name": "CAREER_1.A - Filtered search by position and location",
+        "line": 6,
+        "name": "Search page 1. - Quick UI check for search form",
         "tags": [],
-        "id": "epam-career-site-tests;career_1.a---filtered-search-by-position-and-location",
+        "id": "search-functionality;search-page-1.---quick-ui-check-for-search-form",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "name": "the EPAM career site is loaded",
+            "name": "the EPAM career site is opened",
             "result": {
               "status": "passed",
-              "duration": 2972
+              "duration": 9739
             },
             "line": 7,
             "match": {
-              "location": "C:\\training_project_2\\cucumber-protractor-skeleton\\e2e\\step_definitions\\careerPage.js:11"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "the role Test Automation Engineer is entered",
-            "result": {
-              "status": "passed",
-              "duration": 5248
-            },
-            "line": 8,
-            "match": {
-              "location": "C:\\training_project_2\\cucumber-protractor-skeleton\\e2e\\step_definitions\\careerPage.js:19"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "the country Hungary is selected",
-            "result": {
-              "status": "failed",
-              "duration": 128,
-              "error_message": "NoSuchElementError: No element found using locator: by.cssContainingText(\"ul li .option\", \"\" + city + \"\")\n    at elementArrayFinder.getWebElements.then (C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\protractor\\built\\element.js:814:27)\n    at ManagedPromise.invokeCallback_ (C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at asyncRun (C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27)\n    at C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at process._tickCallback (internal/process/next_tick.js:68:7)Error\n    at ElementArrayFinder.applyAction_ (C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\protractor\\built\\element.js:459:27)\n    at ElementArrayFinder.(anonymous function).args [as isDisplayed] (C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\protractor\\built\\element.js:91:29)\n    at ElementFinder.(anonymous function).args [as isDisplayed] (C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\protractor\\built\\element.js:831:22)\n    at careerPage.isCityVisible (C:\\training_project_2\\cucumber-protractor-skeleton\\pageObjects\\careerPage.js:57:49)\n    at careerPage.openLocationDropDown.then (C:\\training_project_2\\cucumber-protractor-skeleton\\e2e\\step_definitions\\careerPage.js:26:33)\n    at elementArrayFinder_.then (C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\protractor\\built\\element.js:804:32)\n    at ManagedPromise.invokeCallback_ (C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at asyncRun (C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27)\n    at C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at process._tickCallback (internal/process/next_tick.js:68:7)"
-            },
-            "line": 9,
-            "match": {
-              "location": "C:\\training_project_2\\cucumber-protractor-skeleton\\e2e\\step_definitions\\careerPage.js:23"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "the city Debrecen is selected",
-            "result": {
-              "status": "skipped"
-            },
-            "line": 10,
-            "match": {
-              "location": "C:\\training_project_2\\cucumber-protractor-skeleton\\e2e\\step_definitions\\careerPage.js:23"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "the Find button is clicked",
-            "result": {
-              "status": "skipped"
-            },
-            "line": 11,
-            "match": {
-              "location": "C:\\training_project_2\\cucumber-protractor-skeleton\\e2e\\step_definitions\\careerPage.js:15"
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:11"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "name": "an open position should be displayed",
+            "name": "the search form should be displayed",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 48
+            },
+            "line": 8,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:15"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "the placeholder should be displayed",
+            "result": {
+              "status": "passed",
+              "duration": 32
+            },
+            "line": 9,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:19"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "the keyword input should be displayed",
+            "result": {
+              "status": "passed",
+              "duration": 35
+            },
+            "line": 10,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:23"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "the location drop-down should be displayed",
+            "result": {
+              "status": "passed",
+              "duration": 40
+            },
+            "line": 11,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:27"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "the skill drop-down should be displayed",
+            "result": {
+              "status": "passed",
+              "duration": 41
             },
             "line": 12,
             "match": {
-              "location": "C:\\training_project_2\\cucumber-protractor-skeleton\\e2e\\step_definitions\\careerPage.js:60"
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:31"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "name": "the title of the position should be Test Automation Engineer",
+            "name": "the find button should be displayed",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 31
             },
             "line": 13,
             "match": {
-              "location": "C:\\training_project_2\\cucumber-protractor-skeleton\\e2e\\step_definitions\\careerPage.js:48"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "the location of the position should be DEBRECEN, HUNGARY",
-            "result": {
-              "status": "skipped"
-            },
-            "line": 14,
-            "match": {
-              "location": "C:\\training_project_2\\cucumber-protractor-skeleton\\e2e\\step_definitions\\careerPage.js:52"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "the hot label of the position should be hidden",
-            "result": {
-              "status": "skipped"
-            },
-            "line": 15,
-            "match": {
-              "location": "C:\\training_project_2\\cucumber-protractor-skeleton\\e2e\\step_definitions\\careerPage.js:56"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "the description of the position should start with: Currently we are looking for a Test Automation Engineer for our Debrecen office",
-            "result": {
-              "status": "skipped"
-            },
-            "line": 16,
-            "match": {
-              "location": "C:\\training_project_2\\cucumber-protractor-skeleton\\e2e\\step_definitions\\careerPage.js:64"
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:35"
             }
           }
         ]
       },
       {
         "keyword": "Scenario",
-        "line": 21,
-        "name": "CAREER_1.B - Filtered search by position and location",
+        "line": 28,
+        "name": "Search page 2.A - job title search",
         "tags": [],
-        "id": "epam-career-site-tests;career_1.b---filtered-search-by-position-and-location",
+        "id": "search-functionality;search-page-2.a---job-title-search",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "name": "the EPAM career site is loaded",
+            "name": "the EPAM career site is opened",
             "result": {
               "status": "passed",
-              "duration": 740
-            },
-            "line": 7,
-            "match": {
-              "location": "C:\\training_project_2\\cucumber-protractor-skeleton\\e2e\\step_definitions\\careerPage.js:11"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "the role Java Developer is entered",
-            "result": {
-              "status": "passed",
-              "duration": 5211
-            },
-            "line": 8,
-            "match": {
-              "location": "C:\\training_project_2\\cucumber-protractor-skeleton\\e2e\\step_definitions\\careerPage.js:19"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "the country Hungary is selected",
-            "result": {
-              "status": "failed",
-              "duration": 138,
-              "error_message": "NoSuchElementError: No element found using locator: by.cssContainingText(\"ul li .option\", \"\" + city + \"\")\n    at elementArrayFinder.getWebElements.then (C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\protractor\\built\\element.js:814:27)\n    at ManagedPromise.invokeCallback_ (C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at asyncRun (C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27)\n    at C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at process._tickCallback (internal/process/next_tick.js:68:7)Error\n    at ElementArrayFinder.applyAction_ (C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\protractor\\built\\element.js:459:27)\n    at ElementArrayFinder.(anonymous function).args [as isDisplayed] (C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\protractor\\built\\element.js:91:29)\n    at ElementFinder.(anonymous function).args [as isDisplayed] (C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\protractor\\built\\element.js:831:22)\n    at careerPage.isCityVisible (C:\\training_project_2\\cucumber-protractor-skeleton\\pageObjects\\careerPage.js:57:49)\n    at careerPage.openLocationDropDown.then (C:\\training_project_2\\cucumber-protractor-skeleton\\e2e\\step_definitions\\careerPage.js:26:33)\n    at elementArrayFinder_.then (C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\protractor\\built\\element.js:804:32)\n    at ManagedPromise.invokeCallback_ (C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at asyncRun (C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27)\n    at C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at process._tickCallback (internal/process/next_tick.js:68:7)"
-            },
-            "line": 9,
-            "match": {
-              "location": "C:\\training_project_2\\cucumber-protractor-skeleton\\e2e\\step_definitions\\careerPage.js:23"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "the city Debrecen is selected",
-            "result": {
-              "status": "skipped"
-            },
-            "line": 10,
-            "match": {
-              "location": "C:\\training_project_2\\cucumber-protractor-skeleton\\e2e\\step_definitions\\careerPage.js:23"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "the Find button is clicked",
-            "result": {
-              "status": "skipped"
-            },
-            "line": 11,
-            "match": {
-              "location": "C:\\training_project_2\\cucumber-protractor-skeleton\\e2e\\step_definitions\\careerPage.js:15"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "an open position should be displayed",
-            "result": {
-              "status": "skipped"
-            },
-            "line": 12,
-            "match": {
-              "location": "C:\\training_project_2\\cucumber-protractor-skeleton\\e2e\\step_definitions\\careerPage.js:60"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "the title of the position should be Java Developer",
-            "result": {
-              "status": "skipped"
-            },
-            "line": 13,
-            "match": {
-              "location": "C:\\training_project_2\\cucumber-protractor-skeleton\\e2e\\step_definitions\\careerPage.js:48"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "the location of the position should be DEBRECEN, HUNGARY",
-            "result": {
-              "status": "skipped"
-            },
-            "line": 14,
-            "match": {
-              "location": "C:\\training_project_2\\cucumber-protractor-skeleton\\e2e\\step_definitions\\careerPage.js:52"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "the hot label of the position should be displayed",
-            "result": {
-              "status": "skipped"
-            },
-            "line": 15,
-            "match": {
-              "location": "C:\\training_project_2\\cucumber-protractor-skeleton\\e2e\\step_definitions\\careerPage.js:56"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "the description of the position should start with: Currently we are looking for a Java Developer for our Debrecen office",
-            "result": {
-              "status": "skipped"
+              "duration": 838
             },
             "line": 16,
             "match": {
-              "location": "C:\\training_project_2\\cucumber-protractor-skeleton\\e2e\\step_definitions\\careerPage.js:64"
-            }
-          }
-        ]
-      },
-      {
-        "keyword": "Scenario",
-        "line": 23,
-        "name": "CAREER_1. - Filtered search by skills and location",
-        "tags": [],
-        "id": "epam-career-site-tests;career_1.---filtered-search-by-skills-and-location",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "the EPAM career site is loaded",
-            "result": {
-              "status": "passed",
-              "duration": 720
-            },
-            "line": 24,
-            "match": {
-              "location": "C:\\training_project_2\\cucumber-protractor-skeleton\\e2e\\step_definitions\\careerPage.js:11"
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:11"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
+            "name": "the keyword Java Developer is entered",
+            "result": {
+              "status": "passed",
+              "duration": 5156
+            },
+            "line": 17,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:43"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "the skill drop-down is opened",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "line": 18,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:47"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "the skill Software Engineering is selected",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "line": 19,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:51"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
             "name": "the Find button is clicked",
             "result": {
               "status": "passed",
-              "duration": 6107
+              "duration": 0
             },
-            "line": 25,
+            "line": 20,
             "match": {
-              "location": "C:\\training_project_2\\cucumber-protractor-skeleton\\e2e\\step_definitions\\careerPage.js:15"
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:39"
             }
           },
           {
@@ -312,49 +185,111 @@
             "name": "the SRL should be displayed",
             "result": {
               "status": "passed",
-              "duration": 22
+              "duration": 13864
             },
-            "line": 26,
+            "line": 21,
             "match": {
-              "location": "C:\\training_project_2\\cucumber-protractor-skeleton\\e2e\\step_definitions\\careerPage.js:44"
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:55"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "the title of the first position should be Java Developer",
+            "result": {
+              "status": "passed",
+              "duration": 33
+            },
+            "line": 22,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:59"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "the location of the position should be BUDAPEST, HUNGARY",
+            "result": {
+              "status": "passed",
+              "duration": 32
+            },
+            "line": 23,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:63"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "the description of the position should be: Currently we are looking for a Java Developer for our Budapest office to make the team even stronger. In Hungary currently 1400+ IT Engineers help the world’s leading companies imagine, design, engineer and deliver software...",
+            "result": {
+              "status": "passed",
+              "duration": 33
+            },
+            "line": 24,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:67"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "Search page 2.B - job ID search",
+        "tags": [],
+        "id": "search-functionality;search-page-2.b---job-id-search",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "the EPAM career site is opened",
+            "result": {
+              "status": "passed",
+              "duration": 828
+            },
+            "line": 16,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:11"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "name": "the country Hungary is selected",
+            "name": "the keyword 18374 is entered",
             "result": {
-              "status": "failed",
-              "duration": 149,
-              "error_message": "NoSuchElementError: No element found using locator: by.cssContainingText(\"ul li .option\", \"\" + city + \"\")\n    at elementArrayFinder.getWebElements.then (C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\protractor\\built\\element.js:814:27)\n    at ManagedPromise.invokeCallback_ (C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at asyncRun (C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27)\n    at C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at process._tickCallback (internal/process/next_tick.js:68:7)Error\n    at ElementArrayFinder.applyAction_ (C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\protractor\\built\\element.js:459:27)\n    at ElementArrayFinder.(anonymous function).args [as isDisplayed] (C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\protractor\\built\\element.js:91:29)\n    at ElementFinder.(anonymous function).args [as isDisplayed] (C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\protractor\\built\\element.js:831:22)\n    at careerPage.isCityVisible (C:\\training_project_2\\cucumber-protractor-skeleton\\pageObjects\\careerPage.js:57:49)\n    at careerPage.openLocationDropDown.then (C:\\training_project_2\\cucumber-protractor-skeleton\\e2e\\step_definitions\\careerPage.js:26:33)\n    at elementArrayFinder_.then (C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\protractor\\built\\element.js:804:32)\n    at ManagedPromise.invokeCallback_ (C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at asyncRun (C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27)\n    at C:\\training_project_2\\cucumber-protractor-skeleton\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at process._tickCallback (internal/process/next_tick.js:68:7)"
+              "status": "passed",
+              "duration": 5117
             },
-            "line": 27,
+            "line": 17,
             "match": {
-              "location": "C:\\training_project_2\\cucumber-protractor-skeleton\\e2e\\step_definitions\\careerPage.js:23"
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:43"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "name": "the city Debrecen is selected",
+            "name": "the skill drop-down is opened",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 0
             },
-            "line": 28,
+            "line": 18,
             "match": {
-              "location": "C:\\training_project_2\\cucumber-protractor-skeleton\\e2e\\step_definitions\\careerPage.js:23"
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:47"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "name": "the following skills are selected: Software Engineering, Software Test Engineering",
+            "name": "the skill Software Engineering is selected",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 0
             },
-            "line": 29,
+            "line": 19,
             "match": {
-              "location": "C:\\training_project_2\\cucumber-protractor-skeleton\\e2e\\step_definitions\\careerPage.js:40"
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:51"
             }
           },
           {
@@ -362,48 +297,313 @@
             "keyword": "And ",
             "name": "the Find button is clicked",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 0
             },
-            "line": 30,
+            "line": 20,
             "match": {
-              "location": "C:\\training_project_2\\cucumber-protractor-skeleton\\e2e\\step_definitions\\careerPage.js:15"
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:39"
             }
           },
           {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "Test Automation Engineer"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Java Developer"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "UI Developer"
-                    ]
-                  }
-                ]
-              }
-            ],
+            "arguments": [],
             "keyword": "Then ",
-            "name": "the following positions should be displayed:",
+            "name": "the SRL should be displayed",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 11324
             },
-            "line": 31,
+            "line": 21,
             "match": {
-              "location": "C:\\training_project_2\\cucumber-protractor-skeleton\\e2e\\step_definitions\\careerPage.js:68"
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:55"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "the title of the first position should be .NET (Web Application) Developer",
+            "result": {
+              "status": "passed",
+              "duration": 32
+            },
+            "line": 22,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:59"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "the location of the position should be BUDAPEST, HUNGARY",
+            "result": {
+              "status": "passed",
+              "duration": 32
+            },
+            "line": 23,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:63"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "the description of the position should be: Currently we are looking for a .NET (Web Application) Developer for our Budapest office to make the team even stronger. In Hungary currently 1400+ IT Engineers help the world’s leading companies imagine, design, engineer and...",
+            "result": {
+              "status": "passed",
+              "duration": 33
+            },
+            "line": 24,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:67"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "line": 39,
+        "name": "Search page 3.A - asterisk search",
+        "tags": [],
+        "id": "search-functionality;search-page-3.a---asterisk-search",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "the EPAM career site is opened",
+            "result": {
+              "status": "passed",
+              "duration": 776
+            },
+            "line": 32,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "the keyword * is entered",
+            "result": {
+              "status": "passed",
+              "duration": 5090
+            },
+            "line": 33,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:43"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "the Find button is clicked",
+            "result": {
+              "status": "passed",
+              "duration": 2
+            },
+            "line": 34,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:39"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "there should be 0 results on the SRL",
+            "result": {
+              "status": "passed",
+              "duration": 6050
+            },
+            "line": 35,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:71"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "line": 40,
+        "name": "Search page 3.B - 0 results search",
+        "tags": [],
+        "id": "search-functionality;search-page-3.b---0-results-search",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "the EPAM career site is opened",
+            "result": {
+              "status": "passed",
+              "duration": 823
+            },
+            "line": 32,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "the keyword (back-end) is entered",
+            "result": {
+              "status": "passed",
+              "duration": 5126
+            },
+            "line": 33,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:43"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "the Find button is clicked",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "line": 34,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:39"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "there should be 0 results on the SRL",
+            "result": {
+              "status": "passed",
+              "duration": 6232
+            },
+            "line": 35,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:71"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "line": 41,
+        "name": "Search page 3.C - invalid keyword search",
+        "tags": [],
+        "id": "search-functionality;search-page-3.c---invalid-keyword-search",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "the EPAM career site is opened",
+            "result": {
+              "status": "passed",
+              "duration": 783
+            },
+            "line": 32,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "the keyword lorem ipsum is entered",
+            "result": {
+              "status": "passed",
+              "duration": 5157
+            },
+            "line": 33,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:43"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "the Find button is clicked",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "line": 34,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:39"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "there should be 0 results on the SRL",
+            "result": {
+              "status": "passed",
+              "duration": 6065
+            },
+            "line": 35,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:71"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "line": 42,
+        "name": "Search page 3.D - invalid keyword search",
+        "tags": [],
+        "id": "search-functionality;search-page-3.d---invalid-keyword-search",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "the EPAM career site is opened",
+            "result": {
+              "status": "passed",
+              "duration": 1638
+            },
+            "line": 32,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "the keyword }$ł@#&˛°˘^÷Łß$ł`˛°^ is entered",
+            "result": {
+              "status": "passed",
+              "duration": 5188
+            },
+            "line": 33,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:43"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "the Find button is clicked",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "line": 34,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:39"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "there should be 0 results on the SRL",
+            "result": {
+              "status": "passed",
+              "duration": 6063
+            },
+            "line": 35,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:71"
             }
           }
         ]
       }
     ],
-    "id": "epam-career-site-tests"
+    "id": "search-functionality"
   }
 ]

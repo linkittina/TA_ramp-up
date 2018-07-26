@@ -1,34 +1,42 @@
-Feature: EPAM career site tests
+Feature: Search functionality
   As a user
-  I want to visit the EPAM career site
-  So that I can apply for a job
+  I want to find job opportunities on the EPAM career site
+  So that I can the open positions
 
-  Scenario Outline: CAREER_1.<n> - Filtered search by position and location
-    Given the EPAM career site is loaded
-    When the role <role> is entered
-    And the country Hungary is selected
-    And the city Debrecen is selected
+  Scenario: Search page 1. - Quick UI check for search form
+    Given the EPAM career site is opened
+    Then the search form should be displayed
+    And the placeholder should be displayed
+    And the keyword input should be displayed
+    And the location drop-down should be displayed
+    And the skill drop-down should be displayed
+    And the find button should be displayed
+
+  Scenario Outline: Search page 2.<n> - <type> search
+    Given the EPAM career site is opened
+    When the keyword <keyword> is entered
+    And the skill drop-down is opened
+    And the skill <skill> is selected
     And the Find button is clicked
-    Then an open position should be displayed
-    And the title of the position should be <role>
+    Then the SRL should be displayed
+    And the title of the first position should be <role>
     And the location of the position should be <location>
-    And the hot label of the position should be <priority>
-    And the description of the position should start with: <description>
+    And the description of the position should be: <description>
 
     Examples:
-      | n | role                     | location          | priority  | description                                                                     |
-      | A | Test Automation Engineer | DEBRECEN, HUNGARY | hidden    | Currently we are looking for a Test Automation Engineer for our Debrecen office |
-      | B | Java Developer           | DEBRECEN, HUNGARY | displayed | Currently we are looking for a Java Developer for our Debrecen office           |
+      | n | type      | keyword        | skill                | role                             | location          | description                                                                                                                                                                                                                         |
+      | A | job title | Java Developer | Software Engineering | Java Developer                   | BUDAPEST, HUNGARY | Currently we are looking for a Java Developer for our Budapest office to make the team even stronger. In Hungary currently 1400+ IT Engineers help the world’s leading companies imagine, design, engineer and deliver software...  |
+      | B | job ID    | 18374          | Software Engineering | .NET (Web Application) Developer | BUDAPEST, HUNGARY | Currently we are looking for a .NET (Web Application) Developer for our Budapest office to make the team even stronger. In Hungary currently 1400+ IT Engineers help the world’s leading companies imagine, design, engineer and... |
 
-  Scenario: CAREER_1. - Filtered search by skills and location
-    Given the EPAM career site is loaded
-    When the Find button is clicked
-    Then the SRL should be displayed
-    When the country Hungary is selected
-    And the city Debrecen is selected
-    And the following skills are selected: Software Engineering, Software Test Engineering
+  Scenario Outline: Search page 3.<n> - <type> search
+    Given the EPAM career site is opened
+    When the keyword <keyword> is entered
     And the Find button is clicked
-    Then the following positions should be displayed:
-      | Test Automation Engineer |
-      | Java Developer           |
-      | UI Developer             |
+    Then there should be 0 results on the SRL
+
+    Examples:
+      | n | type            | keyword             |
+      | A | asterisk        | *                   |
+      | B | 0 results       | (back-end)          |
+      | C | invalid keyword | lorem ipsum         |
+      | D | invalid keyword | }$ł@#&˛°˘^÷Łß$ł`˛°^ |

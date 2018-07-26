@@ -8,44 +8,55 @@ const careerPage = new CareerPage();
 defineSupportCode(({Given, When, Then, setDefaultTimeout}) => {
     setDefaultTimeout(GLOBAL_TIMEOUT);
 
-    Given(/^the EPAM career site is loaded$/, () => {
+    Given(/^the EPAM career site is opened$/, () => {
         return careerPage.load();
+    });
+
+    Then(/^the search form should be displayed$/, () => {
+        return careerPage.isSearchFormVisible();
+    });
+
+    Then(/^the placeholder should be displayed$/, () => {
+        return careerPage.isPlaceholderVisible();
+    });
+
+    Then(/^the keyword input should be displayed$/, () => {
+        return careerPage.isKeywordInputVisible();
+    });
+
+    Then(/^the location drop-down should be displayed$/, () => {
+        return careerPage.isLocationDropDownVisible();
+    });
+
+    Then(/^the skill drop-down should be displayed$/, () => {
+        return careerPage.isSkillDropDownVisible();
+    });
+
+    Then(/^the find button should be displayed$/, () => {
+        return careerPage.isFindButtonVisible();
     });
 
     When(/^the Find button is clicked$/, () => {
         return careerPage.find();
     });
 
-    When(/^the role (.+) is entered$/, role => {
-        return careerPage.roleName(role);
+    When(/^the keyword (.+) is entered$/, keyword => {
+        return careerPage.roleName(keyword);
     });
 
-    When(/^the (country|city) (.+) is selected$/, (type, name) => {
-        if (type === 'country') {
-            return careerPage.openLocationDropDown().then(() => {
-                if (!careerPage.isCityVisible()) {
-                    return careerPage.selectCountry(name);
-                }
-            });
-        }
-        else if (type === 'city') {
-            return careerPage.selectCity(name);
-        }
+    When(/^the skill drop-down is opened$/, () => {
+        return careerPage.openSkillDropDown();
     });
 
-    // When(/^the city Debrecen is selected$/, () => {
-    //     return careerPage.citySelection();
-    // });
-
-    When(/^the following skills are selected: Software Engineering, Software Test Engineering$/, () => {
-        return careerPage.skillSelection();
+    When(/^the skill (.+) is selected$/, skill => {
+        return careerPage.skillName(skill);
     });
 
     Then(/^the SRL should be displayed$/, () => {
         return careerPage.isSrlVisible();
     });
 
-    Then(/^the title of the position should be (.+)$/, role => {
+    Then(/^the title of the first position should be (.+)$/, role => {
         return careerPage.getPositionTitle(role);
     });
 
@@ -53,20 +64,12 @@ defineSupportCode(({Given, When, Then, setDefaultTimeout}) => {
         return careerPage.getLocation(location);
     });
 
-    Then(/^the hot label of the position should be (.+)$/, visibility => {
-        return careerPage.isHotLabelVisible(visibility);
-    });
-
-    Then(/^an open position should be displayed$/, () => {
-        return careerPage.isAnyPositionAvailable();
-    });
-
-    Then(/^the description of the position should start with: (.+)$/, (text) => {
+    Then(/^the description of the position should be: (.+)$/, (text) => {
         return careerPage.getDescription(text);
     });
 
-    Then(/^the following positions should be displayed:$/, (dataTable) => {
-        return careerPage.getAvailablePositions(dataTable);
+    Then(/^there should be 0 results on the SRL$/, () => {
+        return careerPage.isZeroResults();
     });
 
 });
