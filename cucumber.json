@@ -20,7 +20,7 @@
             "name": "the EPAM career page is opened",
             "result": {
               "status": "passed",
-              "duration": 3281
+              "duration": 3666
             },
             "line": 7,
             "match": {
@@ -33,7 +33,7 @@
             "name": "the keyword Java Developer is entered",
             "result": {
               "status": "passed",
-              "duration": 5168
+              "duration": 5165
             },
             "line": 8,
             "match": {
@@ -59,7 +59,7 @@
             "name": "the apply button should be displayed",
             "result": {
               "status": "passed",
-              "duration": 6101
+              "duration": 6097
             },
             "line": 10,
             "match": {
@@ -72,7 +72,7 @@
             "name": "the apply button is clicked",
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1
             },
             "line": 12,
             "match": {
@@ -82,10 +82,10 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "name": "the title of the page should be: Java Developer",
+            "name": "the title Java Developer of the page should be displayed",
             "result": {
               "status": "passed",
-              "duration": 1627
+              "duration": 964
             },
             "line": 13,
             "match": {
@@ -111,7 +111,7 @@
             "name": "the search form should be displayed",
             "result": {
               "status": "passed",
-              "duration": 943
+              "duration": 876
             },
             "line": 16,
             "match": {
@@ -122,18 +122,18 @@
       },
       {
         "keyword": "Scenario",
-        "line": 18,
-        "name": "2. Open a job page from URL and check UI",
+        "line": 29,
+        "name": "2.A Open a job page from URL and check UI",
         "tags": [],
-        "id": "job-page-ui;2.-open-a-job-page-from-url-and-check-ui",
+        "id": "job-page-ui;2.a-open-a-job-page-from-url-and-check-ui",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "name": "the following job url is opened: https://www.epam.com/careers/job-listings/job.42288",
+            "name": "the following job url https://www.epam.com/careers/job-listings/job.42288 is opened",
             "result": {
               "status": "passed",
-              "duration": 1426
+              "duration": 871
             },
             "line": 19,
             "match": {
@@ -143,10 +143,10 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "name": "the title of the page should be: Web Portal Business Analyst",
+            "name": "the title Web Portal Business Analyst of the page should be displayed",
             "result": {
               "status": "passed",
-              "duration": 30
+              "duration": 26
             },
             "line": 20,
             "match": {
@@ -156,7 +156,107 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "name": "the location of the job should be: Dubai, UAE",
+            "name": "the location Dubai, UAE of the job should be displayed",
+            "result": {
+              "status": "passed",
+              "duration": 38
+            },
+            "line": 21,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\jobPage.js:23"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "the job ID should be: JOB #: 42288",
+            "result": {
+              "status": "passed",
+              "duration": 34
+            },
+            "line": 22,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\jobPage.js:27"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "the hot label should be displayed",
+            "result": {
+              "status": "passed",
+              "duration": 33
+            },
+            "line": 23,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\jobPage.js:31"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "the relocation label should be displayed",
+            "result": {
+              "status": "passed",
+              "duration": 29
+            },
+            "line": 24,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\jobPage.js:35"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "the apply form should be displayed",
+            "result": {
+              "status": "passed",
+              "duration": 20
+            },
+            "line": 25,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\jobPage.js:39"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "line": 30,
+        "name": "2.B Open a job page from URL and check UI",
+        "tags": [],
+        "id": "job-page-ui;2.b-open-a-job-page-from-url-and-check-ui",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "the following job url https://www.epam.com/careers/job-listings/job.42377 is opened",
+            "result": {
+              "status": "passed",
+              "duration": 851
+            },
+            "line": 19,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\jobPage.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "the title Account Manager, Bilingual Japanese/English of the page should be displayed",
+            "result": {
+              "status": "passed",
+              "duration": 28
+            },
+            "line": 20,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\jobPage.js:19"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "the location USA of the job should be displayed",
             "result": {
               "status": "passed",
               "duration": 33
@@ -169,10 +269,10 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "name": "the hot label should be displayed",
+            "name": "the job ID should be: JOB #: 42377",
             "result": {
               "status": "passed",
-              "duration": 29
+              "duration": 26
             },
             "line": 22,
             "match": {
@@ -182,10 +282,10 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "name": "the relocation label should be displayed",
+            "name": "the hot label should be displayed",
             "result": {
               "status": "passed",
-              "duration": 30
+              "duration": 25
             },
             "line": 23,
             "match": {
@@ -195,14 +295,27 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "name": "the apply form should be displayed",
+            "name": "the relocation label should be displayed",
             "result": {
               "status": "passed",
-              "duration": 19
+              "duration": 24
             },
             "line": 24,
             "match": {
               "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\jobPage.js:35"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "the apply form should be displayed",
+            "result": {
+              "status": "passed",
+              "duration": 18
+            },
+            "line": 25,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\jobPage.js:39"
             }
           }
         ]

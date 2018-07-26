@@ -7,6 +7,7 @@ class jobPage {
         this.applyForm = element(by.css('.right-container'));
         this.hotLabel = element(by.css('.vacancy-page__option-hot'));
         this.relocationLabel = element(by.css('.vacancy-page__option-relocation'));
+        this.jobId = element(by.css('.vacancy-page__id'));
         this.careerButton = careers => element(by.cssContainingText('.top-navigation__link', careers))
 
     }
@@ -24,8 +25,12 @@ class jobPage {
         return expect(this.locationOfJobPage.getText()).to.eventually.equal(location);
     }
 
+    getJobId(id) {
+        return expect(this.jobId.getText()).to.eventually.equal(id);
+    }
+
     isHotLabelVisible() {
-        return expect(this.hotLabel.isDisplayed()).to.eventually.be.true;
+        return expect(this.hotLabel.isDisplayed()).to.eventually.be.true
     }
 
     isRelocationLabelVisible() {
