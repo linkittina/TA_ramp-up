@@ -6,7 +6,7 @@ class jobPage {
         this.applyForm = element(by.css('.right-container'));
         this.hotLabel = element(by.css('.vacancy-page__option-hot'));
         this.relocationLabel = element(by.css('.vacancy-page__option-relocation'));
-        this.careerButton = careers =>  element(by.cssContainingText('.top-navigation__link', careers))
+        this.careerButton = careers => element(by.cssContainingText('.top-navigation__link', careers))
 
     }
 

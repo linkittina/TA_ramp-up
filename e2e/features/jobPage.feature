@@ -15,9 +15,9 @@ Feature: Job page UI
     When the Careers navigation link is clicked
     Then the search form should be displayed
 
-    Scenario: 2. Open a job page from URL and check UI
-      Given the EPAM Web Portal Business Analyst job page is opened
-      Then the title of the page should be: Web Portal Business Analyst
-      And the hot label should be displayed
-      And the relocation label should be displayed
-      And the apply form should be displayed
+  Scenario: 2. Open a job page from URL and check UI
+    Given the EPAM Web Portal Business Analyst job page is opened
+    Then the title of the page should be: Web Portal Business Analyst
+    And the hot label should be displayed
+    And the relocation label should be displayed
+    And the apply form should be displayed
