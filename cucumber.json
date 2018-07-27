@@ -20,7 +20,7 @@
             "name": "the EPAM career page is opened",
             "result": {
               "status": "passed",
-              "duration": 2574
+              "duration": 2725
             },
             "line": 8,
             "match": {
@@ -33,7 +33,7 @@
             "name": "the search form should be displayed",
             "result": {
               "status": "passed",
-              "duration": 61
+              "duration": 46
             },
             "line": 9,
             "match": {
@@ -46,7 +46,7 @@
             "name": "the placeholder should be displayed",
             "result": {
               "status": "passed",
-              "duration": 29
+              "duration": 32
             },
             "line": 10,
             "match": {
@@ -59,7 +59,7 @@
             "name": "the keyword input should be displayed",
             "result": {
               "status": "passed",
-              "duration": 34
+              "duration": 43
             },
             "line": 11,
             "match": {
@@ -72,7 +72,7 @@
             "name": "the location drop-down should be displayed",
             "result": {
               "status": "passed",
-              "duration": 43
+              "duration": 37
             },
             "line": 12,
             "match": {
@@ -85,7 +85,7 @@
             "name": "the skill drop-down should be displayed",
             "result": {
               "status": "passed",
-              "duration": 36
+              "duration": 39
             },
             "line": 13,
             "match": {
@@ -120,7 +120,7 @@
             "name": "the EPAM career page is opened",
             "result": {
               "status": "passed",
-              "duration": 782
+              "duration": 787
             },
             "line": 17,
             "match": {
@@ -133,7 +133,7 @@
             "name": "the keyword Java Developer is entered",
             "result": {
               "status": "passed",
-              "duration": 5149
+              "duration": 5156
             },
             "line": 18,
             "match": {
@@ -172,7 +172,7 @@
             "name": "the Find button is clicked",
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1
             },
             "line": 21,
             "match": {
@@ -185,7 +185,7 @@
             "name": "the SRL should be displayed",
             "result": {
               "status": "passed",
-              "duration": 11272
+              "duration": 11369
             },
             "line": 22,
             "match": {
@@ -198,7 +198,7 @@
             "name": "the title of the first position should be Java Developer",
             "result": {
               "status": "passed",
-              "duration": 34
+              "duration": 36
             },
             "line": 23,
             "match": {
@@ -211,7 +211,7 @@
             "name": "the location of the position should be BUDAPEST, HUNGARY",
             "result": {
               "status": "passed",
-              "duration": 33
+              "duration": 31
             },
             "line": 24,
             "match": {
@@ -224,7 +224,7 @@
             "name": "the description of the position should be: Currently we are looking for a Java Developer for our Budapest office to make the team even stronger. In Hungary currently 1400+ IT Engineers help the world’s leading companies imagine, design, engineer and deliver software...",
             "result": {
               "status": "passed",
-              "duration": 32
+              "duration": 30
             },
             "line": 25,
             "match": {
@@ -246,7 +246,7 @@
             "name": "the EPAM career page is opened",
             "result": {
               "status": "passed",
-              "duration": 772
+              "duration": 765
             },
             "line": 17,
             "match": {
@@ -259,7 +259,7 @@
             "name": "the keyword 18374 is entered",
             "result": {
               "status": "passed",
-              "duration": 5106
+              "duration": 5103
             },
             "line": 18,
             "match": {
@@ -285,7 +285,7 @@
             "name": "the skill Software Engineering is selected",
             "result": {
               "status": "passed",
-              "duration": 1
+              "duration": 0
             },
             "line": 20,
             "match": {
@@ -311,7 +311,7 @@
             "name": "the SRL should be displayed",
             "result": {
               "status": "passed",
-              "duration": 11249
+              "duration": 11387
             },
             "line": 22,
             "match": {
@@ -324,7 +324,7 @@
             "name": "the title of the first position should be .NET (Web Application) Developer",
             "result": {
               "status": "passed",
-              "duration": 30
+              "duration": 40
             },
             "line": 23,
             "match": {
@@ -337,7 +337,7 @@
             "name": "the location of the position should be BUDAPEST, HUNGARY",
             "result": {
               "status": "passed",
-              "duration": 33
+              "duration": 31
             },
             "line": 24,
             "match": {
@@ -350,7 +350,7 @@
             "name": "the description of the position should be: Currently we are looking for a .NET (Web Application) Developer for our Budapest office to make the team even stronger. In Hungary currently 1400+ IT Engineers help the world’s leading companies imagine, design, engineer and...",
             "result": {
               "status": "passed",
-              "duration": 33
+              "duration": 32
             },
             "line": 25,
             "match": {
@@ -372,7 +372,7 @@
             "name": "the EPAM career page is opened",
             "result": {
               "status": "passed",
-              "duration": 752
+              "duration": 759
             },
             "line": 34,
             "match": {
@@ -385,7 +385,7 @@
             "name": "the keyword * is entered",
             "result": {
               "status": "passed",
-              "duration": 5095
+              "duration": 5094
             },
             "line": 35,
             "match": {
@@ -398,7 +398,7 @@
             "name": "the Find button is clicked",
             "result": {
               "status": "passed",
-              "duration": 2
+              "duration": 1
             },
             "line": 36,
             "match": {
@@ -411,7 +411,7 @@
             "name": "there should be 0 results on the SRL",
             "result": {
               "status": "passed",
-              "duration": 6100
+              "duration": 6037
             },
             "line": 37,
             "match": {
@@ -472,7 +472,7 @@
             "name": "there should be 0 results on the SRL",
             "result": {
               "status": "passed",
-              "duration": 6059
+              "duration": 6161
             },
             "line": 37,
             "match": {
@@ -494,7 +494,7 @@
             "name": "the EPAM career page is opened",
             "result": {
               "status": "passed",
-              "duration": 927
+              "duration": 898
             },
             "line": 34,
             "match": {
@@ -507,7 +507,7 @@
             "name": "the keyword 汉语 is entered",
             "result": {
               "status": "passed",
-              "duration": 5093
+              "duration": 5094
             },
             "line": 35,
             "match": {
@@ -533,7 +533,7 @@
             "name": "there should be 0 results on the SRL",
             "result": {
               "status": "passed",
-              "duration": 5982
+              "duration": 6088
             },
             "line": 37,
             "match": {
@@ -544,10 +544,10 @@
       },
       {
         "keyword": "Scenario",
-        "line": 54,
-        "name": "4.A - Uppercase search",
+        "line": 44,
+        "name": "3.D - Strict match search",
         "tags": [],
-        "id": "search-functionality;4.a---uppercase-search",
+        "id": "search-functionality;3.d---strict-match-search",
         "steps": [
           {
             "arguments": [],
@@ -555,9 +555,9 @@
             "name": "the EPAM career page is opened",
             "result": {
               "status": "passed",
-              "duration": 741
+              "duration": 727
             },
-            "line": 47,
+            "line": 34,
             "match": {
               "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:11"
             }
@@ -565,73 +565,12 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "name": "the keyword BIG DATA is entered",
+            "name": "the keyword \"Java\" is entered",
             "result": {
               "status": "passed",
-              "duration": 5132
+              "duration": 5102
             },
-            "line": 48,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:19"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "the Find button is clicked",
-            "result": {
-              "status": "passed",
-              "duration": 0
-            },
-            "line": 49,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:15"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "the SRL should be displayed",
-            "result": {
-              "status": "passed",
-              "duration": 6132
-            },
-            "line": 50,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:59"
-            }
-          }
-        ]
-      },
-      {
-        "keyword": "Scenario",
-        "line": 55,
-        "name": "4.B - Special character search",
-        "tags": [],
-        "id": "search-functionality;4.b---special-character-search",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "the EPAM career page is opened",
-            "result": {
-              "status": "passed",
-              "duration": 770
-            },
-            "line": 47,
-            "match": {
-              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:11"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "the keyword world’s is entered",
-            "result": {
-              "status": "passed",
-              "duration": 5104
-            },
-            "line": 48,
+            "line": 35,
             "match": {
               "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:19"
             }
@@ -644,7 +583,190 @@
               "status": "passed",
               "duration": 1
             },
-            "line": 49,
+            "line": 36,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:15"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "there should be 0 results on the SRL",
+            "result": {
+              "status": "passed",
+              "duration": 6050
+            },
+            "line": 37,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:75"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "line": 45,
+        "name": "3.E - Eliminate a keyword search",
+        "tags": [],
+        "id": "search-functionality;3.e---eliminate-a-keyword-search",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "the EPAM career page is opened",
+            "result": {
+              "status": "passed",
+              "duration": 1268
+            },
+            "line": 34,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "the keyword Data -Big is entered",
+            "result": {
+              "status": "passed",
+              "duration": 5110
+            },
+            "line": 35,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:19"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "the Find button is clicked",
+            "result": {
+              "status": "passed",
+              "duration": 1
+            },
+            "line": 36,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:15"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "there should be 0 results on the SRL",
+            "result": {
+              "status": "passed",
+              "duration": 6065
+            },
+            "line": 37,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:75"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "line": 46,
+        "name": "3.F - Logical operator search",
+        "tags": [],
+        "id": "search-functionality;3.f---logical-operator-search",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "the EPAM career page is opened",
+            "result": {
+              "status": "passed",
+              "duration": 757
+            },
+            "line": 34,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "the keyword UI OR Developer is entered",
+            "result": {
+              "status": "passed",
+              "duration": 5140
+            },
+            "line": 35,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:19"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "the Find button is clicked",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "line": 36,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:15"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "there should be 0 results on the SRL",
+            "result": {
+              "status": "passed",
+              "duration": 6221
+            },
+            "line": 37,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:75"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "line": 57,
+        "name": "4.A - Uppercase search",
+        "tags": [],
+        "id": "search-functionality;4.a---uppercase-search",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "the EPAM career page is opened",
+            "result": {
+              "status": "passed",
+              "duration": 735
+            },
+            "line": 50,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "the keyword BIG DATA is entered",
+            "result": {
+              "status": "passed",
+              "duration": 5107
+            },
+            "line": 51,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:19"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "the Find button is clicked",
+            "result": {
+              "status": "passed",
+              "duration": 1
+            },
+            "line": 52,
             "match": {
               "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:15"
             }
@@ -655,9 +777,70 @@
             "name": "the SRL should be displayed",
             "result": {
               "status": "passed",
-              "duration": 6028
+              "duration": 6088
+            },
+            "line": 53,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:59"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "line": 58,
+        "name": "4.B - Special character search",
+        "tags": [],
+        "id": "search-functionality;4.b---special-character-search",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "the EPAM career page is opened",
+            "result": {
+              "status": "passed",
+              "duration": 893
             },
             "line": 50,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "the keyword world’s is entered",
+            "result": {
+              "status": "passed",
+              "duration": 5101
+            },
+            "line": 51,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:19"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "the Find button is clicked",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "line": 52,
+            "match": {
+              "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:15"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "the SRL should be displayed",
+            "result": {
+              "status": "passed",
+              "duration": 6045
+            },
+            "line": 53,
             "match": {
               "location": "C:\\TA_ramp-up\\TA_ramp-up_evaluation\\e2e\\step_definitions\\careerPage.js:59"
             }
@@ -688,7 +871,7 @@
             "name": "the EPAM career page is opened",
             "result": {
               "status": "passed",
-              "duration": 746
+              "duration": 775
             },
             "line": 7,
             "match": {
@@ -701,7 +884,7 @@
             "name": "the keyword Java Developer is entered",
             "result": {
               "status": "passed",
-              "duration": 5150
+              "duration": 5147
             },
             "line": 8,
             "match": {
@@ -714,7 +897,7 @@
             "name": "the Find button is clicked",
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1
             },
             "line": 9,
             "match": {
@@ -727,7 +910,7 @@
             "name": "the apply button should be displayed",
             "result": {
               "status": "passed",
-              "duration": 6089
+              "duration": 6104
             },
             "line": 10,
             "match": {
@@ -753,7 +936,7 @@
             "name": "the title Java Developer of the page should be displayed",
             "result": {
               "status": "passed",
-              "duration": 859
+              "duration": 877
             },
             "line": 13,
             "match": {
@@ -766,7 +949,7 @@
             "name": "the Careers navigation link is clicked",
             "result": {
               "status": "passed",
-              "duration": 1
+              "duration": 0
             },
             "line": 15,
             "match": {
@@ -779,7 +962,7 @@
             "name": "the search form should be displayed",
             "result": {
               "status": "passed",
-              "duration": 854
+              "duration": 786
             },
             "line": 16,
             "match": {
@@ -801,7 +984,7 @@
             "name": "the following job url https://www.epam.com/careers/job-listings/job.42288 is opened",
             "result": {
               "status": "passed",
-              "duration": 832
+              "duration": 856
             },
             "line": 19,
             "match": {
@@ -814,7 +997,7 @@
             "name": "the title Web Portal Business Analyst of the page should be displayed",
             "result": {
               "status": "passed",
-              "duration": 32
+              "duration": 25
             },
             "line": 20,
             "match": {
@@ -827,7 +1010,7 @@
             "name": "the location Dubai, UAE of the job should be displayed",
             "result": {
               "status": "passed",
-              "duration": 35
+              "duration": 30
             },
             "line": 21,
             "match": {
@@ -840,7 +1023,7 @@
             "name": "the job ID should be: JOB #: 42288",
             "result": {
               "status": "passed",
-              "duration": 32
+              "duration": 35
             },
             "line": 22,
             "match": {
@@ -853,7 +1036,7 @@
             "name": "the hot label should be displayed",
             "result": {
               "status": "passed",
-              "duration": 29
+              "duration": 27
             },
             "line": 23,
             "match": {
@@ -866,7 +1049,7 @@
             "name": "the relocation label should be displayed",
             "result": {
               "status": "passed",
-              "duration": 34
+              "duration": 28
             },
             "line": 24,
             "match": {
@@ -879,7 +1062,7 @@
             "name": "the apply form should be displayed",
             "result": {
               "status": "passed",
-              "duration": 19
+              "duration": 28
             },
             "line": 25,
             "match": {
@@ -901,7 +1084,7 @@
             "name": "the following job url https://www.epam.com/careers/job-listings/job.42377 is opened",
             "result": {
               "status": "passed",
-              "duration": 784
+              "duration": 772
             },
             "line": 19,
             "match": {
@@ -914,7 +1097,7 @@
             "name": "the title Account Manager, Bilingual Japanese/English of the page should be displayed",
             "result": {
               "status": "passed",
-              "duration": 27
+              "duration": 28
             },
             "line": 20,
             "match": {
@@ -927,7 +1110,7 @@
             "name": "the location USA of the job should be displayed",
             "result": {
               "status": "passed",
-              "duration": 27
+              "duration": 25
             },
             "line": 21,
             "match": {
@@ -940,7 +1123,7 @@
             "name": "the job ID should be: JOB #: 42377",
             "result": {
               "status": "passed",
-              "duration": 31
+              "duration": 26
             },
             "line": 22,
             "match": {
@@ -953,7 +1136,7 @@
             "name": "the hot label should be displayed",
             "result": {
               "status": "passed",
-              "duration": 26
+              "duration": 23
             },
             "line": 23,
             "match": {
@@ -966,7 +1149,7 @@
             "name": "the relocation label should be displayed",
             "result": {
               "status": "passed",
-              "duration": 24
+              "duration": 23
             },
             "line": 24,
             "match": {
@@ -979,7 +1162,7 @@
             "name": "the apply form should be displayed",
             "result": {
               "status": "passed",
-              "duration": 19
+              "duration": 18
             },
             "line": 25,
             "match": {

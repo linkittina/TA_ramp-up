@@ -29,7 +29,7 @@ Feature: Search functionality
       | A | Job title | Java Developer | Software Engineering | Java Developer                   | BUDAPEST, HUNGARY | Currently we are looking for a Java Developer for our Budapest office to make the team even stronger. In Hungary currently 1400+ IT Engineers help the world’s leading companies imagine, design, engineer and deliver software...  |
       | B | Job ID    | 18374          | Software Engineering | .NET (Web Application) Developer | BUDAPEST, HUNGARY | Currently we are looking for a .NET (Web Application) Developer for our Budapest office to make the team even stronger. In Hungary currently 1400+ IT Engineers help the world’s leading companies imagine, design, engineer and... |
 
-    # Negative cases
+    # Negative cases/ Edge cases
   Scenario Outline: 3.<n> - <type> search
     Given the EPAM career page is opened
     When the keyword <keyword> is entered
@@ -37,12 +37,14 @@ Feature: Search functionality
     Then there should be 0 results on the SRL
 
     Examples:
-      | n | type                                    | keyword     |
-      | A | Asterisk                                | *           |
-      | B | Invalid search term                     | lorem ipsum |
-      | C | Invalid search term + special character | 汉语          |
+      | n | type                                    | keyword         |
+      | A | Asterisk                                | *               |
+      | B | Invalid search term                     | lorem ipsum     |
+      | C | Invalid search term + special character | 汉语              |
+      | D | Strict match                            | "Java"          |
+      | E | Eliminate a keyword                     | Data -Big       |
+      | F | Logical operator                        | UI OR Developer |
 
-    # Edge cases
   Scenario Outline: 4.<n> - <type> search
     Given the EPAM career page is opened
     When the keyword <keyword> is entered
