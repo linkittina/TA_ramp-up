@@ -6,7 +6,7 @@
   "scripts": {
     "postinstall": "npm run wd:update",
     "wd:update": "node node_modules/protractor/bin/webdriver-manager update --versions.chrome 2.37",
-    "test:cucumber": "node node_modules/protractor/bin/protractor ./e2e/protractor.config.js"
+    "epam": "node node_modules/protractor/bin/protractor ./e2e/protractor.config.js"
   },
   "author": "",
   "license": "ISC",

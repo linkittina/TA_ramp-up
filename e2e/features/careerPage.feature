@@ -39,9 +39,8 @@ Feature: Search functionality
     Examples:
       | n | type                                    | keyword     |
       | A | Asterisk                                | *           |
-      | B | 0 results                               | (back-end)  |
-      | C | Invalid search term                     | lorem ipsum |
-      | D | Invalid search term + special character | 汉语          |
+      | B | Invalid search term                     | lorem ipsum |
+      | C | Invalid search term + special character | 汉语          |
 
     # Edge cases
   Scenario Outline: 4.<n> - <type> search
@@ -51,6 +50,6 @@ Feature: Search functionality
     Then the SRL should be displayed
 
     Examples:
-      | n | type              | keyword     |
-      | A | Uppercase         | BIG DATA    |
-      | B | Special character | world’s     |
+      | n | type              | keyword  |
+      | A | Uppercase         | BIG DATA |
+      | B | Special character | world’s  |
