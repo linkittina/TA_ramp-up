@@ -17,27 +17,27 @@ defineSupportCode(({Given, When, Then, setDefaultTimeout}) => {
     });
 
     Then(/^the title (.+) of the page should be displayed$/, (title) => {
-        return jobPage.getTitleOfJobPage(title);
+        return expect(jobPage.titleOfJobPage.getText()).to.eventually.equal(title);
     });
 
     Then(/^the location (.+) of the job should be displayed$/, (location) => {
-        return jobPage.getLocationOfJobPage(location);
+        return expect(jobPage.locationOfJobPage.getText()).to.eventually.equal(location);
     });
 
     Then(/^the job ID should be: (.+)$/, (id) => {
-        return jobPage.getJobId(id);
+        return expect(jobPage.jobId.getText()).to.eventually.equal(id);
     });
 
     Then(/^the hot label should be displayed$/, () => {
-        return jobPage.isHotLabelVisible();
+        return expect(jobPage.hotLabel.isDisplayed()).to.eventually.be.true
     });
 
     Then(/^the relocation label should be displayed$/, () => {
-        return jobPage.isRelocationLabelVisible();
+        return expect(jobPage.relocationLabel.isDisplayed()).to.eventually.be.true;
     });
 
     Then(/^the apply form should be displayed$/, () => {
-        return jobPage.isApplyFormVisible();
+        return expect(jobPage.applyForm.isDisplayed()).to.eventually.be.true;
     });
 
 });

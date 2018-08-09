@@ -9,8 +9,7 @@ defineSupportCode(({Given, When, Then, setDefaultTimeout}) => {
     setDefaultTimeout(GLOBAL_TIMEOUT);
 
     Given(/^the EPAM career page is opened$/, () => {
-        careerPage.load();
-        return browser.wait(careerPage.logo.isDisplayed(), GLOBAL_TIMEOUT);
+        return careerPage.load();
     });
 
     When(/^the Find button is clicked$/, () => {

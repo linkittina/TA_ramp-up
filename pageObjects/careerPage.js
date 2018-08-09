@@ -22,6 +22,7 @@ class careerPage {
 
     load() {
         browser.get('https://www.epam.com/careers');
+        return browser.wait(this.logo.isDisplayed(), GLOBAL_TIMEOUT);
     }
 
     clickFindButton() {

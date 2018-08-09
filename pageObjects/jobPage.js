@@ -17,30 +17,6 @@ class jobPage {
         return browser.wait(this.applyForm.isDisplayed(), GLOBAL_TIMEOUT);
     }
 
-    getTitleOfJobPage(title) {
-        return expect(this.titleOfJobPage.getText()).to.eventually.equal(title);
-    }
-
-    getLocationOfJobPage(location) {
-        return expect(this.locationOfJobPage.getText()).to.eventually.equal(location);
-    }
-
-    getJobId(id) {
-        return expect(this.jobId.getText()).to.eventually.equal(id);
-    }
-
-    isHotLabelVisible() {
-        return expect(this.hotLabel.isDisplayed()).to.eventually.be.true
-    }
-
-    isRelocationLabelVisible() {
-        return expect(this.relocationLabel.isDisplayed()).to.eventually.be.true;
-    }
-
-    isApplyFormVisible() {
-        return expect(this.applyForm.isDisplayed()).to.eventually.be.true;
-    }
-
     navigateToCareerPage(careers) {
         this.careerButton(careers).click();
     }
