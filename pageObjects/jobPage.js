@@ -2,13 +2,13 @@
 
 class jobPage {
     constructor() {
-        this.titleOfJobPage = element(by.css('.vacancy-page__header > h1'));
-        this.locationOfJobPage = element(by.css('.vacancy-page__location'));
+        this.titleOfJobPage = element(by.css('.recruiting-page__header > h1'));
+        this.locationOfJobPage = element(by.css('.recruiting-page__location'));
         this.applyForm = element(by.css('.right-container'));
-        this.hotLabel = element(by.css('.vacancy-page__option-hot'));
+        this.hotLabel = element(by.css('.recruiting-page__option-label'));
         this.relocationLabel = element(by.css('.vacancy-page__option-relocation'));
         this.jobId = element(by.css('.vacancy-page__id'));
-        this.careerButton = careers => element(by.cssContainingText('.top-navigation__link', careers))
+        this.careerButton = careers => element(by.cssContainingText('.top-navigation__item-link', careers))
 
     }
 

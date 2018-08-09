@@ -8,7 +8,6 @@ Feature: Search functionality
     Given the EPAM career page is opened
     Then the search form should be displayed
     And the placeholder should be displayed
-    And the keyword input should be displayed
     And the location drop-down should be displayed
     And the skill drop-down should be displayed
     And the find button should be displayed
