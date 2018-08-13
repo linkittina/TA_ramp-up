@@ -9,7 +9,6 @@ class jobPage {
         this.relocationLabel = element(by.css('.vacancy-page__option-relocation'));
         this.jobId = element(by.css('.vacancy-page__id'));
         this.careerButton = careers => element(by.cssContainingText('.top-navigation__item-link', careers))
-
     }
 
     loadJobUrl(url) {

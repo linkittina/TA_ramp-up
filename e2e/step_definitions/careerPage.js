@@ -32,31 +32,55 @@ defineSupportCode(({Given, When, Then, setDefaultTimeout}) => {
         return careerPage.clickApplyButton();
     });
 
-    Then(/^the search form should be displayed$/, () => {
-        return expect(careerPage.searchForm.isDisplayed()).to.eventually.be.true;
+    Then(/^the search form should be (displayed|hidden)$/, (state) => {
+        if (state === 'displayed') {
+            return expect(careerPage.searchForm.isPresent()).to.eventually.be.true;
+        } else if (state === 'hidden') {
+            return expect(careerPage.searchForm.isPresent()).to.eventually.be.false;
+        }
     });
 
-    Then(/^the placeholder should be displayed$/, () => {
-        return expect(careerPage.placeholder.isDisplayed()).to.eventually.be.true;
+    Then(/^the placeholder should be (displayed|hidden)$/, (state) => {
+        if (state === 'displayed') {
+            return expect(careerPage.placeholder.isPresent()).to.eventually.be.true;
+        } else if (state === 'hidden') {
+            return expect(careerPage.placeholder.isPresent()).to.eventually.be.false;
+        }
     });
 
-    Then(/^the location drop-down should be displayed$/, () => {
-        return expect(careerPage.locationDropDown.isDisplayed()).to.eventually.be.true;
+    Then(/^the location drop-down should be (displayed|hidden)$/, (state) => {
+        if (state === 'displayed') {
+            return expect(careerPage.locationDropDown.isPresent()).to.eventually.be.true;
+        } else if (state === 'hidden') {
+            return expect(careerPage.locationDropDown.isPresent()).to.eventually.be.false;
+        }
     });
 
-    Then(/^the skill drop-down should be displayed$/, () => {
-        return expect(careerPage.skillDropDown.isDisplayed()).to.eventually.be.true;
+    Then(/^the skill drop-down should be (displayed|hidden)$/, (state) => {
+        if (state === 'displayed') {
+            return expect(careerPage.skillDropDown.isPresent()).to.eventually.be.true;
+        } else if (state === 'hidden') {
+            return expect(careerPage.skillDropDown.isPresent()).to.eventually.be.false;
+        }
     });
 
-    Then(/^the find button should be displayed$/, () => {
-        return expect(careerPage.findButton.isDisplayed()).to.eventually.be.true;
+    Then(/^the find button should be (displayed|hidden)$/, (state) => {
+        if (state === 'displayed') {
+            return expect(careerPage.findButton.isPresent()).to.eventually.be.true;
+        } else if (state === 'hidden') {
+            return expect(careerPage.findButton.isPresent()).to.eventually.be.false;
+        }
     });
 
-    Then(/^the SRL should be displayed$/, () => {
-        return expect(careerPage.srl.isDisplayed()).to.eventually.be.true;
+    Then(/^the SRL should be (displayed|hidden)$/, (state) => {
+        if (state === 'displayed') {
+            return expect(careerPage.srl.isPresent()).to.eventually.be.true;
+        } else if (state === 'hidden') {
+            return expect(careerPage.srl.isPresent()).to.eventually.be.false;
+        }
     });
 
-    Then(/^the title of the first position should( not)? be (.+)$/, (not, role) => {
+    Then(/^the title of the first position should( not)? be: (.+)$/, (not, role) => {
         if (not === " not") {
             return expect(careerPage.positionTitle.getText()).to.eventually.not.equal(role);
         } else {
@@ -64,11 +88,11 @@ defineSupportCode(({Given, When, Then, setDefaultTimeout}) => {
         }
     });
 
-    Then(/^the location of the position should be (.+)$/, location => {
+    Then(/^the location of the first position should be: (.+)$/, location => {
         return expect(careerPage.positionLocation.getText()).to.eventually.equal(location);
     });
 
-    Then(/^the description of the position should( not)? be: (.+)$/, (not, text) => {
+    Then(/^the description of the first position should( not)? be: (.+)$/, (not, text) => {
         if (not === "not") {
             return expect(careerPage.positionDescription.getText()).to.eventually.not.equal(text);
         } else {
@@ -76,8 +100,8 @@ defineSupportCode(({Given, When, Then, setDefaultTimeout}) => {
         }
     });
 
-    Then(/^there should be 0 results on the SRL$/, () => {
-        return expect(careerPage.zeroResults.isDisplayed()).to.eventually.be.true;
+    Then(/^there should be 0 results message on the SRL$/, () => {
+        return expect(careerPage.zeroResultsMessage.isDisplayed()).to.eventually.be.true;
     });
 
     Then(/^the apply button should be displayed$/, () => {

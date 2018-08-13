@@ -3,25 +3,27 @@ Feature: Search functionality
   I want to find job opportunities on the EPAM career site
   So that I can the open positions
 
-    # Positive cases
-  Scenario: 1. Quick UI check for search form
+  Background:
     Given the EPAM career page is opened
     Then the search form should be displayed
+    And the SRL should be hidden
+
+    # Positive cases
+  Scenario: 1. Quick UI check for search form
     And the placeholder should be displayed
     And the location drop-down should be displayed
     And the skill drop-down should be displayed
     And the find button should be displayed
 
   Scenario Outline: 2.<n> - <type> search
-    Given the EPAM career page is opened
     When the keyword <keyword> is entered
     And the skill drop-down is opened
     And the skill <skill> is selected
     And the Find button is clicked
     Then the SRL should be displayed
-    And the title of the first position should be <role>
-    And the location of the position should be <location>
-    And the description of the position should be: <description>
+    And the title of the first position should be: <role>
+    And the location of the first position should be: <location>
+    And the description of the first position should be: <description>
 
     Examples:
       | n | type      | keyword        | skill                | role                             | location          | description                                                                                                                                                                                                                         |
@@ -30,10 +32,9 @@ Feature: Search functionality
 
     # Negative cases/ Edge cases
   Scenario Outline: 3.<n> - <type> search
-    Given the EPAM career page is opened
     When the keyword <keyword> is entered
     And the Find button is clicked
-    Then there should be 0 results on the SRL
+    Then there should be 0 results message on the SRL
 
     Examples:
       | n | type                                    | keyword         |
@@ -45,7 +46,6 @@ Feature: Search functionality
       | F | Logical operator                        | UI OR Developer |
 
   Scenario Outline: 4.<n> - <type> search
-    Given the EPAM career page is opened
     When the keyword <keyword> is entered
     And the Find button is clicked
     Then the SRL should be displayed

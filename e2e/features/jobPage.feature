@@ -10,21 +10,23 @@ Feature: Job page UI
     Then the apply button should be displayed
 
     When the apply button is clicked
-    Then the title Java Developer of the page should be displayed
+    Then the title of the page should be: Java Developer
 
     When the Careers navigation link is clicked
     Then the search form should be displayed
 
   Scenario Outline: 2.<n> Open a job page from URL and check UI
     Given the following job url <url> is opened
-    Then the title <title> of the page should be displayed
-    And the location <location> of the job should be displayed
+    Then the apply form should be displayed
+    And the title of the page should be: <title>
+    And the location of the job should be: <location>
     And the job ID should be: <id>
-    And the hot label should be displayed
-    And the relocation label should be displayed
-    And the apply form should be displayed
+    And the hot label should be <hot_label>
+    And the relocation label should be <relocation_label>
 
     Examples:
-      | n | url                                                 | title                                       | location   | id           |
-      | A | https://www.epam.com/careers/job-listings/job.42288 | Web Portal Business Analyst                 | Dubai, UAE | JOB #: 42288 |
-      | B | https://www.epam.com/careers/job-listings/job.42377 | Account Manager, Bilingual Japanese/English | USA        | JOB #: 42377 |
+      | n | url                                                 | title                              | location              | id           | hot_label | relocation_label |
+      | A | https://www.epam.com/careers/job-listings/job.42288 | Web Portal Business Analyst        | Dubai, UAE            | JOB #: 42288 | displayed | displayed        |
+      | B | https://www.epam.com/careers/job-listings/job.24522 | Senior Business Analyst            | Atyrau, Kazakhstan    | JOB #: 24522 | hidden    | displayed        |
+      | C | https://www.epam.com/careers/job-listings/job.30832 | Talent Acquisition Sourcing Expert | Monterrey, NL, Mexico | JOB #: 30832 | displayed | hidden           |
+      | D | https://www.epam.com/careers/job-listings/job.42456 | Delivery Manager                   | Brussels, Belgium     | JOB #: 42456 | hidden    | hidden           |

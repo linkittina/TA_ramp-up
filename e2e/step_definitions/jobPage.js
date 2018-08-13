@@ -16,11 +16,11 @@ defineSupportCode(({Given, When, Then, setDefaultTimeout}) => {
         return jobPage.navigateToCareerPage(careers);
     });
 
-    Then(/^the title (.+) of the page should be displayed$/, (title) => {
+    Then(/^the title of the page should be: (.+)$/, (title) => {
         return expect(jobPage.titleOfJobPage.getText()).to.eventually.equal(title);
     });
 
-    Then(/^the location (.+) of the job should be displayed$/, (location) => {
+    Then(/^the location of the job should be: (.+)$/, (location) => {
         return expect(jobPage.locationOfJobPage.getText()).to.eventually.equal(location);
     });
 
@@ -28,16 +28,28 @@ defineSupportCode(({Given, When, Then, setDefaultTimeout}) => {
         return expect(jobPage.jobId.getText()).to.eventually.equal(id);
     });
 
-    Then(/^the hot label should be displayed$/, () => {
-        return expect(jobPage.hotLabel.isDisplayed()).to.eventually.be.true
+    Then(/^the hot label should be (displayed|hidden)$/, (state) => {
+        if (state === 'displayed') {
+            return expect(jobPage.hotLabel.isPresent()).to.eventually.be.true;
+        } else if (state === 'hidden') {
+            return expect(jobPage.hotLabel.isPresent()).to.eventually.be.false;
+        }
     });
 
-    Then(/^the relocation label should be displayed$/, () => {
-        return expect(jobPage.relocationLabel.isDisplayed()).to.eventually.be.true;
+    Then(/^the relocation label should be (displayed|hidden)$/, (state) => {
+        if (state === 'displayed') {
+            return expect(jobPage.relocationLabel.isPresent()).to.eventually.be.true;
+        } else if (state === 'hidden') {
+            return expect(jobPage.relocationLabel.isPresent()).to.eventually.be.false;
+        }
     });
 
-    Then(/^the apply form should be displayed$/, () => {
-        return expect(jobPage.applyForm.isDisplayed()).to.eventually.be.true;
+    Then(/^the apply form should be (displayed|hidden)$/, (state) => {
+        if (state === 'displayed') {
+            return expect(jobPage.applyForm.isPresent()).to.eventually.be.true;
+        } else if (state === 'hidden') {
+            return expect(jobPage.applyForm.isPresent()).to.eventually.be.false;
+        }
     });
 
 });

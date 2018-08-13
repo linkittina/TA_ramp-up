@@ -15,9 +15,8 @@ class careerPage {
         this.positionTitle = element(by.css('.search-result__item-name'));
         this.positionLocation = element(by.css('.search-result__location'));
         this.positionDescription = element(by.css('.search-result__item-description'));
-        this.zeroResults = element(by.cssContainingText('.search-result__error-message', 'Sorry, your search returned no results. Please try another combination.'));
+        this.zeroResultsMessage = element(by.cssContainingText('.search-result__error-message', 'Sorry, your search returned no results. Please try another combination.'));
         this.applyButton = element(by.cssContainingText('.search-result__item-apply', 'Apply'));
-
     }
 
     load() {
