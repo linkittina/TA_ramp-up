@@ -2,6 +2,8 @@
 
 class jobPage {
     constructor() {
+        this.desktop = element(by.css('.section-ui.section--padding-normal.section--hide-on-mobile'));
+        this.careerPageSearchForm = this.desktop.element(by.css('.job-search__form'));
         this.titleOfJobPage = element(by.css('.recruiting-page__header > h1'));
         this.locationOfJobPage = element(by.css('.recruiting-page__location'));
         this.applyForm = element(by.css('.right-container'));
@@ -18,6 +20,7 @@ class jobPage {
 
     navigateToCareerPage(careers) {
         this.careerButton(careers).click();
+        return browser.wait(this.careerPageSearchForm.isDisplayed(), GLOBAL_TIMEOUT);
     }
 }
 

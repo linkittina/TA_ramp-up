@@ -16,40 +16,40 @@ defineSupportCode(({Given, When, Then, setDefaultTimeout}) => {
         return jobPage.navigateToCareerPage(careers);
     });
 
-    Then(/^the title of the page should be: (.+)$/, (title) => {
-        return expect(jobPage.titleOfJobPage.getText()).to.eventually.equal(title);
+    Then(/^the title of the page should( not)? be: (.+)$/, (not, title) => {
+        if (not === " not") {
+            return expect(jobPage.titleOfJobPage.getText()).to.eventually.not.equal(title);
+        } else {
+            return expect(jobPage.titleOfJobPage.getText()).to.eventually.equal(title);
+        }
     });
 
-    Then(/^the location of the job should be: (.+)$/, (location) => {
-        return expect(jobPage.locationOfJobPage.getText()).to.eventually.equal(location);
+    Then(/^the location of the job should( not)? be: (.+)$/, (not, location) => {
+        if (not === " not") {
+            return expect(jobPage.locationOfJobPage.getText()).to.eventually.not.equal(location);
+        } else {
+            return expect(jobPage.locationOfJobPage.getText()).to.eventually.equal(location);
+        }
     });
 
-    Then(/^the job ID should be: (.+)$/, (id) => {
-        return expect(jobPage.jobId.getText()).to.eventually.equal(id);
+    Then(/^the job ID should( not)? be: (.+)$/, (not, id) => {
+        if (not === " not") {
+            return expect(jobPage.jobId.getText()).to.eventually.not.equal(id);
+        } else {
+            return expect(jobPage.jobId.getText()).to.eventually.equal(id);
+        }
     });
 
     Then(/^the hot label should be (displayed|hidden)$/, (state) => {
-        if (state === 'displayed') {
-            return expect(jobPage.hotLabel.isPresent()).to.eventually.be.true;
-        } else if (state === 'hidden') {
-            return expect(jobPage.hotLabel.isPresent()).to.eventually.be.false;
-        }
+        return expect(jobPage.hotLabel.isPresent()).to.eventually.be.equal(state === 'displayed');
     });
 
     Then(/^the relocation label should be (displayed|hidden)$/, (state) => {
-        if (state === 'displayed') {
-            return expect(jobPage.relocationLabel.isPresent()).to.eventually.be.true;
-        } else if (state === 'hidden') {
-            return expect(jobPage.relocationLabel.isPresent()).to.eventually.be.false;
-        }
+        return expect(jobPage.relocationLabel.isPresent()).to.eventually.be.equal(state === 'displayed');
     });
 
     Then(/^the apply form should be (displayed|hidden)$/, (state) => {
-        if (state === 'displayed') {
-            return expect(jobPage.applyForm.isPresent()).to.eventually.be.true;
-        } else if (state === 'hidden') {
-            return expect(jobPage.applyForm.isPresent()).to.eventually.be.false;
-        }
+        return expect(jobPage.applyForm.isPresent()).to.eventually.be.equal(state === 'displayed');
     });
 
 });
