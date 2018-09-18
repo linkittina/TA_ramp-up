@@ -29,7 +29,7 @@ defineSupportCode(({Given, When, Then, setDefaultTimeout}) => {
     });
 
     When(/^the skill (.+) is selected$/, skillName => {
-        return careerPage.clickSkillCheckBox(skillName);
+        return careerPage.clickSkillLabel(skillName);
     });
 
     When(/^the (country|city) (.+) is selected$/, (type, name) => {

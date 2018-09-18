@@ -8,6 +8,7 @@ Feature: Search functionality
     Then the search form should be displayed
     And the SRL should be hidden
 
+  @wip
     # Positive cases
   Scenario: 1. - Quick UI check for search form
     And the placeholder should be displayed
@@ -30,7 +31,9 @@ Feature: Search functionality
       | n | type      | keyword        | skill                | role                             | location          | description                                                                                                                                                                                                                         |
       | A | Job title | Java Developer | Software Engineering | Java Developer                   | BUDAPEST, HUNGARY | Currently we are looking for a Java Developer for our Budapest office to make the team even stronger. In Hungary currently 1400+ IT Engineers help the world’s leading companies imagine, design, engineer and deliver software...  |
       | B | Job ID    | 18374          | Software Engineering | .NET (Web Application) Developer | BUDAPEST, HUNGARY | Currently we are looking for a .NET (Web Application) Developer for our Budapest office to make the team even stronger. In Hungary currently 1400+ IT Engineers help the world’s leading companies imagine, design, engineer and... |
+      | C | Job title | Business       | Training & Coaching  | Business Trainer                 | BUDAPEST, HUNGARY | Currently we are looking for a Business Trainer for our Budapest office. We are seeking an experienced Business Trainer to our Budapest-based Career Development Team. As a Trainer, you will be responsible for Soft Skills...     |
 
+  @wip
   Scenario: 3. - Location search
     When the country Switzerland is selected
     And the city Zurich is selected
@@ -38,6 +41,7 @@ Feature: Search functionality
     Then the title of the first position should be: .NET Developer
     And the location of the first position should be: ZURICH, SWITZERLAND
 
+  @wip
     # Negative cases/ Edge cases
   Scenario Outline: 4.<n> - <type> search
     When the keyword <keyword> is entered
@@ -49,11 +53,12 @@ Feature: Search functionality
       | n | type                                    | keyword         |
       | A | Asterisk                                | *               |
       | B | Invalid search term                     | lorem ipsum     |
-      | C | Invalid search term + special character | 汉语             |
+      | C | Invalid search term + special character | 汉语              |
       | D | Strict match                            | "Java"          |
       | E | Eliminate a keyword                     | Data -Big       |
       | F | Logical operator                        | UI OR Developer |
 
+  @wip
   Scenario Outline: 5.<n> - <type> search
     When the keyword <keyword> is entered
     And the Find button is clicked
@@ -63,3 +68,5 @@ Feature: Search functionality
       | n | type              | keyword  |
       | A | Uppercase         | BIG DATA |
       | B | Special character | world’s  |
+
+    #Testing CI

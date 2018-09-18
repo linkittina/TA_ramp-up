@@ -1,3 +1,4 @@
+@wip
 Feature: Job page UI
   As a user
   I want to open a job opportunity on the EPAM career site

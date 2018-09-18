@@ -13,8 +13,10 @@ class careerPage {
         this.locationDropDown = this.desktop.element(by.css('.select-box-results>.options.open'));
         this.skillContainer = this.desktop.element(by.css('.default-label'));
         this.skillDropDown = this.desktop.element(by.css('.multi-select-dropdown'));
-        this.skillCheckBox = skill => this.desktop.element(by.cssContainingText('.checkbox-custom-label', skill));
-        this.skillCheckboxSelected = this.desktop.element(by.css('.checkbox-custom.is-a11y-only[aria-selected="true"]'));
+        this.skillLabel = skill => this.desktop.element(by.cssContainingText('.checkbox-custom-label', skill));
+        this.skillCheckBox = skillName => this.skillLabel(skillName).element(by.xpath('../input'));
+        this.skillListItem = skillName => this.skillLabel(skillName).element(by.xpath('../..'));
+        // this.skillCheckboxSelected = this.desktop.element(by.css('.checkbox-custom.is-a11y-only[aria-selected="true"]'));
         this.roleBox = element(by.css('input#new_form_job_search_1445745853_copy-keyword'));
         this.countrySelection = country => element(by.css(`li[aria-label="${country}"]`));
         this.citySelection = city => element(by.cssContainingText('.dropdown-cities .options > .option', city));
@@ -32,23 +34,23 @@ class careerPage {
 
     load() {
         browser.get('https://www.epam.com/careers');
-        return browser.wait(this.logo.isDisplayed(), GLOBAL_TIMEOUT);
+        return browser.wait(() => this.logo.isDisplayed(), GLOBAL_TIMEOUT);
     }
 
     clickFindButton() {
         this.findButton.click();
         browser.sleep(500);
-        return browser.wait(this.srl.isDisplayed(), GLOBAL_TIMEOUT);
+        return browser.wait(() => this.srl.isDisplayed(), GLOBAL_TIMEOUT);
     }
 
     clickApplyButton() {
         this.applyButton.click();
-        return browser.wait(this.jobPageTitle.isDisplayed(), GLOBAL_TIMEOUT);
+        return browser.wait(() =>this.jobPageTitle.isDisplayed(), GLOBAL_TIMEOUT);
     }
 
-    clickSkillCheckBox(skillName) {
-        this.skillCheckBox(skillName).click();
-        return browser.wait(this.skillCheckboxSelected.isDisplayed(), GLOBAL_TIMEOUT);
+    clickSkillLabel(skillName) {
+        this.skillListItem(skillName).click();
+        return browser.wait(() => this.skillCheckBox(skillName).isSelected(), GLOBAL_TIMEOUT);
     }
 
     selectCountry(country) {
@@ -61,12 +63,12 @@ class careerPage {
 
     openSkillDropDown() {
         this.skillContainer.click();
-        return browser.wait(this.skillDropDown.isDisplayed(), GLOBAL_TIMEOUT);
+        return browser.wait(() => this.skillDropDown.isDisplayed(), GLOBAL_TIMEOUT);
     }
 
     openLocationDropDown() {
         this.locationContainer.click();
-        return browser.wait(this.locationDropDown.isDisplayed(), GLOBAL_TIMEOUT);
+        return browser.wait(() => this.locationDropDown.isDisplayed(), GLOBAL_TIMEOUT);
     }
 
     enterRoleName(keyword) {
